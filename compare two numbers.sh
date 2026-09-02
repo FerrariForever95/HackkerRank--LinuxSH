@@ -1,5 +1,5 @@
-read a b
-
+read a
+read b
 if ((a == b))
 then
     echo "X is equal to Y"
