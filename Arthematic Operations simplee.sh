@@ -1,2 +1,2 @@
 read expression
-echo "scale=3; $expression" | bc -l
+printf "%.3f\n" "$(echo "$expression" | bc -l)"
