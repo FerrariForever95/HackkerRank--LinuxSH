@@ -1,12 +1,13 @@
 read a
-read b 
-read c 
-if((a==b )&&(b==c))
+read b
+read c
+
+if (( a == b && b == c ))
 then
-echo "EQUILATERAL"
-elif(((a==b)&&(b!=c))||((a!=b)&&(b==c))||((a==c)&&(c!=b)))
+    echo "EQUILATERAL"
+elif (( a == b || b == c || a == c ))
 then
-echo "ISOSCELES"
+    echo "ISOSCELES"
 else
-echo "SCALENE"
+    echo "SCALENE"
 fi
