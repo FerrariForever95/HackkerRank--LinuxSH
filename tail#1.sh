@@ -1,1 +1,1 @@
-tail -c 20
+tail -n 20
