@@ -5,4 +5,4 @@ do
 read a 
 sum=$((sum+a));
 done
-echo "scale=3; $sum/$n" | bc
+printf "%.3f\n" "$(echo "$sum/$n" | bc -l)"
