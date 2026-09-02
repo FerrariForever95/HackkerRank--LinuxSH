@@ -1,5 +1,4 @@
-for i in 1 2 3 4
+while IFS= read -r text
 do
-    read text
-    echo "$text" | cut -c 3
+    echo "${text:2:1}"
 done
