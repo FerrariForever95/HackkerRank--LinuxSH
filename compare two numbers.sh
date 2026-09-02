@@ -1,12 +1,12 @@
-read a
-read b
-if ((a == b))
+read X
+read Y
+
+if [ "$X" -lt "$Y" ]
 then
-    echo "X is equal to Y"
-elif ((a > b))
+    echo "X is less than Y"
+elif [ "$X" -gt "$Y" ]
 then
     echo "X is greater than Y"
-elif ((b > a))
-then
-    echo "Y is greater than X"
+else
+    echo "X is equal to Y"
 fi
