@@ -1,1 +1,1 @@
-uniq -c
+uniq -c | sed 's/^ *//'
