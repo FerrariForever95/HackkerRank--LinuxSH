@@ -1,1 +1,1 @@
-sort -t$'\t' -k2,2nr
+sort -k2,2nr
