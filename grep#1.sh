@@ -1,1 +1,1 @@
-grep -Ei 'the|that|then|those'
+grep -Ei '\b(the|that|then|those)\b'
