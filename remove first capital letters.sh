@@ -2,5 +2,7 @@ array=()
 
 while read value
 do
-    array+=("$value")
+    array+=("$(echo "$value" | sed 's/[A-Z]/./')")
 done
+
+echo "${array[@]}"
