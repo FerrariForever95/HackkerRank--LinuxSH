@@ -1,8 +1,5 @@
-countries=()
+countries=($(cat))
 
-while read country
-do
-    countries+=("$country")
-done
+countries=("${countries[@]}" "${countries[@]}" "${countries[@]}")
 
-echo "${countries[@]}" "${countries[@]}" "${countries[@]}"
+echo "${countries[@]}"
